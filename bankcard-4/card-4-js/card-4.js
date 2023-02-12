@@ -205,10 +205,10 @@ holder_name_4.addEventListener("input", function (event) {
   const holder_name_4 = document.getElementById("card-4-name");
   if (holder_name_4.value == "") {
     holder_name_4.setCustomValidity(`Card name is blank`);
-    cardTwoSetErrorFor(holder_name_4, "Card name is blank");
+    cardSetErrorFor(holder_name_4, "Card name is blank");
   } else {
     holder_name_4.setCustomValidity("");
-    cardTwoSetSuccessFor(holder_name_4);
+    cardSetSuccessFor(holder_name_4);
   }
 });
 

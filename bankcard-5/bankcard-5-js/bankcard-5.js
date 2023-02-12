@@ -178,7 +178,7 @@ card_5_CVC.addEventListener("input", function () {
 });
 
 //when add currect bank card details recorrection the errors
-let timeout;             
+let timeoutcard5;             
 cardNumber_cardFiveInput.addEventListener("input", function (event) {
   if (cardNumber_cardFiveInput.value.length == "") {
     cardNumber_cardFiveInput.setCustomValidity(`Card number is blank`);
@@ -187,8 +187,8 @@ cardNumber_cardFiveInput.addEventListener("input", function (event) {
     cardNumber_cardFiveInput.setCustomValidity(`Card number is incomplete`);
     cardSetErrorFor(cardNumber_cardFiveInput, "Card number is incomplete");
   }else {
-    clearTimeout(timeout);
-    timeout = setTimeout(function() {
+    clearTimeout(timeoutcard5);
+    timeoutcard5 = setTimeout(function() {
      card_5_myFunction();
     }, 500);
     } 

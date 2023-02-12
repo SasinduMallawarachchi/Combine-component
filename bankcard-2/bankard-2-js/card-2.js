@@ -284,7 +284,7 @@ cardname_card_2.addEventListener("input", function (event) {
 
 
 //Card Number validation 
-let timeout;             
+let timeoutcard2;             
 cardNumberInput_card_2.addEventListener("input", function (event) {
   if (cardNumberInput_card_2.value.length == "") {
     cardNumberInput_card_2.setCustomValidity(`Card number is blank`);
@@ -293,8 +293,8 @@ cardNumberInput_card_2.addEventListener("input", function (event) {
     cardNumberInput_card_2.setCustomValidity(`Card number is incomplete`);
     cardTwoSetErrorFor(cardNumberInput_card_2, "Card number is incomplete");
   }else {
-    clearTimeout(timeout);
-    timeout = setTimeout(function() {
+    clearTimeout(timeoutcard2);
+    timeoutcard2 = setTimeout(function() {
       cardTwoCardvaNumberValidationFunction();
     }, 500);
     } 
