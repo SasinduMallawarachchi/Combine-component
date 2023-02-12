@@ -205,10 +205,10 @@ holder_name_4.addEventListener("input", function (event) {
   const holder_name_4 = document.getElementById("card-4-name");
   if (holder_name_4.value == "") {
     holder_name_4.setCustomValidity(`Card name is blank`);
-    cardSetErrorFor(holder_name_4, "Card name is blank");
+    cardSetErrorFor4(holder_name_4, "Card name is blank");
   } else {
     holder_name_4.setCustomValidity("");
-    cardSetSuccessFor(holder_name_4);
+    cardSetSuccessFor4(holder_name_4);
   }
 });
 
@@ -221,16 +221,16 @@ expiry_card_4.addEventListener("input", function (event) {
     }
   if (expiry_card_4.value.length == "") {
     expiry_card_4.setCustomValidity(`Card number is blank`);
-    cardSetErrorFor(expiry_card_4, "Card number is blank");
+    cardSetErrorFor4(expiry_card_4, "Card number is blank");
   } else if (expiry_card_4.value.length < 5) {
     expiry_card_4.setCustomValidity(`Card expiration is incomplete`);
-    cardSetErrorFor(expiry_card_4, "Card expiration is incomplete");
+    cardSetErrorFor4(expiry_card_4, "Card expiration is incomplete");
   } else if (!validateExpDate(expiry_card_4.value)) {
     expiry_card_4.setCustomValidity(`Card expiration is past`);
-    cardSetErrorFor(expiry_card_4, "Card expiration is in the past");
+    cardSetErrorFor4(expiry_card_4, "Card expiration is in the past");
   } else {
     expiry_card_4.setCustomValidity("");
-    cardSetSuccessFor(expiry_card_4);
+    cardSetSuccessFor4(expiry_card_4);
   }
 });
 
@@ -238,13 +238,13 @@ expiry_card_4.addEventListener("input", function (event) {
 cardCVC_card_4.addEventListener("input", function (event) {
   if (cardCVC_card_4.value.length == "") {
     cardCVC_card_4.setCustomValidity(`Card CVC is blank`);
-    cardSetErrorFor(cardCVC_card_4, "Card CVC is blank");
+    cardSetErrorFor4(cardCVC_card_4, "Card CVC is blank");
   } else if (cardCVC_card_4.value.length < 3) {
     cardCVC_card_4.setCustomValidity(`Card CVC is incomplete`);
-    cardSetErrorFor(cardCVC_card_4, "Card CVC is incomplete");
+    cardSetErrorFor4(cardCVC_card_4, "Card CVC is incomplete");
   } else {
     cardCVC_card_4.setCustomValidity("");
-    cardSetSuccessFor(cardCVC_card_4);
+    cardSetSuccessFor4(cardCVC_card_4);
   }
 });
 
@@ -265,10 +265,10 @@ cardCVC_card_4.addEventListener("input", function (event) {
 holder_name_4.addEventListener("input", function (event) {
   if (holder_name_4.value == "") {
     holder_name_4.setCustomValidity(`Name is blank`);
-    cardSetErrorFor(holder_name_4, "Name is blank");
+    cardSetErrorFor4(holder_name_4, "Name is blank");
   } else {
     holder_name_4.setCustomValidity("");
-    cardSetSuccessFor(holder_name_4);
+    cardSetSuccessFor4(holder_name_4);
   }
 });
 
@@ -303,10 +303,10 @@ cardForm4.querySelectorAll("select").forEach(function (selects_card_4_1) {
 cardCountry_card_4.addEventListener("input", function (event) {
   if (cardCountry_card_4.value == "") {
     cardCountry_card_4.setCustomValidity(`Card country is blank`);
-    cardSetErrorFor(cardCountry_card_4, "Card country is blank");
+    cardSetErrorFor4(cardCountry_card_4, "Card country is blank");
   } else {
     cardCountry_card_4.setCustomValidity("");
-    cardSetSuccessFor(cardCountry_card_4);
+    cardSetSuccessFor4(cardCountry_card_4);
   }
 });
 
@@ -315,10 +315,10 @@ let card4timeout;
 cardNumberInput_card_4.addEventListener("input", function (event) {
   if (cardNumberInput_card_4.value.length == "") {
     cardNumberInput_card_4.setCustomValidity(`Card number is blank`);
-    cardSetErrorFor(cardNumberInput_card_4, "Card number is blank");
+    cardSetErrorFor4(cardNumberInput_card_4, "Card number is blank");
   } else if (cardNumberInput_card_4.value.length < 15) {
     cardNumberInput_card_4.setCustomValidity(`Card number is incomplete`);
-    cardSetErrorFor(cardNumberInput_card_4, "Card number is incomplete");
+    cardSetErrorFor4(cardNumberInput_card_4, "Card number is incomplete");
   }else {
     clearTimeout(card4timeout);
     card4timeout = setTimeout(function() {
@@ -335,10 +335,10 @@ function cardnumbervalidation4(){
 
   if (numretValue === false) {
     cardNumberInput_card_4.setCustomValidity(`Card number is invalid`);
-    cardSetErrorFor(cardNumberInput_card_4, "Card number is invalid");
+    cardSetErrorFor4(cardNumberInput_card_4, "Card number is invalid");
   } else {
     cardNumberInput_card_4.setCustomValidity("");
-    cardSetSuccessFor(cardNumberInput_card_4);
+    cardSetSuccessFor4(cardNumberInput_card_4);
   }
 }
 
@@ -371,27 +371,27 @@ cardForm4.addEventListener("submit", function (event) {
   
   if (cardCVC_card_4.value.length == "") {
     cardCVC_card_4.setCustomValidity(`Card CVC is blank`);
-    cardSetErrorFor(cardCVC_card_4, "Card CVC is blank");
+    cardSetErrorFor4(cardCVC_card_4, "Card CVC is blank");
     
   }
 
   if (cardNumberInput_card_4.value.length == "") {
     cardNumberInput_card_4.setCustomValidity(`Card number is blank`);
-    cardSetErrorFor(cardNumberInput_card_4, "Card number is blank");
+    cardSetErrorFor4(cardNumberInput_card_4, "Card number is blank");
   }
 
   if (cardCountry_card_4.value == "") {
     cardCountry_card_4.setCustomValidity(`Card country is blank`);
-    cardSetErrorFor(cardCountry_card_4, "Card country is blank");
+    cardSetErrorFor4(cardCountry_card_4, "Card country is blank");
   }
 
   if (expiry_card_4.value.length == "") {
     expiry_card_4.setCustomValidity(`Card number is blank`);
-    cardSetErrorFor(expiry_card_4, "Card number is blank");
+    cardSetErrorFor4(expiry_card_4, "Card number is blank");
   }
   if (holder_name_4.value == "") {
     holder_name_4.setCustomValidity(`Card name is blank`);
-    cardSetErrorFor(holder_name_4, "Card name is blank");
+    cardSetErrorFor4(holder_name_4, "Card name is blank");
   } 
 });
 
@@ -427,7 +427,7 @@ validateExpDate = (date) => {
 };
 
 //error messages 
-function cardSetErrorFor(input, message) {
+function cardSetErrorFor4(input, message) {
   const formControl = input.parentElement; // .form-control
   const CFOErr = formControl.querySelector(".card-cardform-4-erroMessage-div");
   // add error message inside the div
@@ -437,7 +437,7 @@ function cardSetErrorFor(input, message) {
   formControl.classList.remove("success");
 }
 
-function cardSetSuccessFor(input) {
+function cardSetSuccessFor4(input) {
   const formControl = input.parentElement; // .form-control
   const CFOErr = formControl.querySelector(".card-cardform-4-erroMessage-div");
 
