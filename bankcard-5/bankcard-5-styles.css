@@ -123,7 +123,7 @@
 }
 
 /* media query for mobile */
-@media all and (max-width: 500px) {
+@media all and (max-width: 480px) {
     .card-5-image {
         display: none;
         position: absolute;
