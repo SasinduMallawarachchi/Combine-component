@@ -41,7 +41,7 @@ function card_1_SetErrorFor(input, message) {
   formControl.classList.remove("success");
 }
 
-function cardSetSuccessFor(input) {
+function cardSetSuccessFor1(input) {
   const formControl = input.parentElement; // .form-control
   const CFOErr = formControl.querySelector(".card-bankcard-1-erroMessage-div");
 
@@ -56,10 +56,10 @@ function cardSetSuccessFor(input) {
 cardName_1.addEventListener("input", function (event) {
   if (cardName_1.value == "") {
     cardName_1.setCustomValidity(`Card name is blank`);
-    cardSetSuccessFor(cardName_1, "Card name is blank");
+    cardSetSuccessFor1(cardName_1, "Card name is blank");
   } else {
     cardName_1.setCustomValidity("");
-    cardSetSuccessFor(cardName_1);
+    cardSetSuccessFor1(cardName_1);
   }
 });
 
@@ -155,7 +155,7 @@ function BC_1_validity(){
     card_1_SetErrorFor(cardNumber_1, "Card number is invalid");
   } else {
     cardNumber_1.setCustomValidity("");
-    cardSetSuccessFor(cardNumber_1);
+    cardSetSuccessFor1(cardNumber_1);
   }
 }
 
@@ -239,7 +239,7 @@ cardCVC_1.addEventListener("input", function (event) {
     card_1_SetErrorFor(cardCVC_1, "Card CVC is incomplete");
   } else {
     cardCVC_1.setCustomValidity("");
-    cardSetSuccessFor(cardCVC_1);
+    cardSetSuccessFor1(cardCVC_1);
   }
 });
 
@@ -331,7 +331,7 @@ cardExpiry_1.addEventListener("input", function (event) {
     card_1_SetErrorFor(cardExpiry_1, "Card expiration is in the past");
   } else {
     cardExpiry_1.setCustomValidity("");
-    cardSetSuccessFor(cardExpiry_1);
+    cardSetSuccessFor1(cardExpiry_1);
   }
 });
 
@@ -370,7 +370,7 @@ if (cardCountry_1.value == "") {
   card_1_SetErrorFor(cardCountry_1, "Card country is blank");
 } else {
   cardCountry_1.setCustomValidity("");
-  cardSetSuccessFor(cardCountry_1);
+  cardSetSuccessFor1(cardCountry_1);
 }
 });
 
