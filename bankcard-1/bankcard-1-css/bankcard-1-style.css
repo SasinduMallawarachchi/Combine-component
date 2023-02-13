@@ -197,7 +197,7 @@
         align-items: center;
         max-width: 100%;
         margin: auto;
-        border-color: blue;
+        border-color: #394eac;
     } 
 
     .container-bankcard-1{
@@ -222,3 +222,15 @@
     }
 
 } 
+  /*Remove the white mask when auto completing*/
+  .bankcard-1-body input:-webkit-autofill,
+  .bankcard-1-body input:-webkit-autofill:hover, 
+  .bankcard-1-body input:-webkit-autofill:focus, 
+  .bankcard-1-body input:-webkit-autofill:active{
+      -webkit-box-shadow: 0 0 0 100px  rgb(33, 45, 99) inset !important;
+  }
+
+  /*Change text in autofill textbox*/
+  .bankcard-1-body input:-webkit-autofill{
+      -webkit-text-fill-color: rgb(255, 255, 255) !important;
+  }
