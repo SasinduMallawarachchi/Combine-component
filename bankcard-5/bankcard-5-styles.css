@@ -124,7 +124,7 @@
 
 /* media query for mobile */
 @media all and (max-width: 480px) {
-    .card-5-image {
+    /* .card-5-image {
         display: none;
         position: absolute;
         z-index: 2;
@@ -132,8 +132,8 @@
         overflow-x: hidden;
         right: -17.8rem;
         top: 3.3rem;
-        /* scroll-margin-top: 5rem; */
-    }
+    } */
+    
     p {
       margin-top: 0;
       margin-bottom: -1.5rem !important;
