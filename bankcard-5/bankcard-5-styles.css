@@ -123,17 +123,17 @@
 }
 
 /* media query for mobile */
-@media all and (max-width: 480px) {
-    /* .card-5-image {
+@media all and (max-width: 500px) {
+    .card-5-image {
         display: none;
         position: absolute;
         z-index: 2;
         float: right;
         overflow-x: hidden;
-        right: -17.8rem;
-        top: 3.3rem;
-    } */
-    
+        right: -10.8rem;
+        top: 0.1rem;
+    }
+
     p {
       margin-top: 0;
       margin-bottom: -1.5rem !important;
