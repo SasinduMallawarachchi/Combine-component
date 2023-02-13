@@ -3,13 +3,13 @@
     background-color: #FCE0F6;
     font-family: 'Poppins', sans-serif;
 }
-/* .input-card-5-details{
+.input-card-5-details{
     background: #FFFFFF;
     border: 0.4px solid #E6E6E6;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
     border-radius: 5px;
     font-size: 13px !important;
-} */
+}
 .card-5-select-country {
     background: #ffffff;
     border: 0.9px solid #888686;
@@ -22,13 +22,13 @@
 .card-5-select-country option{
     color: #000000 !important;
 }
-/* #bankcard-5-main{
+#bankcard-5-main{
     background: #F7FAFC;
     border: 0.4px solid #E6E6E6;
     border-radius: 8px;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0;
-} */
+}
 .card-5-btnValidate{
     background: rgba(67, 67, 68, 0.8) !important;
     width: 15rem;
@@ -67,13 +67,13 @@
     font-size: 16px !important;
     color:  #6a6969;;   
 }
-/* .input-card-5 input::placeholder {
+.input-card-5 input::placeholder {
     font-size: 18px !important;
     color: #c92424 !important;
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
 
-} */
+}
 .formLabel-card-5 {
     margin-bottom: 14px !important;
     margin-bottom: 0px !important;
@@ -100,17 +100,21 @@
     font-size: 1.2rem;
     color: #868686 !important;
 }
-.card-5-cardicons {
-    /* position: relative;
-    top: 2.2rem;
-    right: 0.5rem;
-    font-size: 1.2rem; */
+/* .card-5-cardicons {
      position: absolute;
     top: 9.1rem;
     right: 20.1rem;
     font-size: 1.2rem;
     color: #868686 !important;
-}
+} */
+ .card-5-cardicons {
+        position: relative;
+        top: 2.1rem;
+        right: 0.5rem;
+        font-size: 1.2rem; 
+    }
+
+
 .cvc-iconCard-5{
     position: relative;
     justify-content: space-between;
@@ -126,18 +130,18 @@
 @media all and (max-width: 480px) {
     .card-5-image {
         display: none;
-        position: absolute;
-        z-index: 2;
+        position: relative;
         float: right;
         overflow-x: hidden;
-        right: -10.8rem;
-        top: 0.1rem;
+        right: -9rem;
+        top: .3rem;
+          z-index: 2;
+      
     }
-
-    p {
+    /* p {
       margin-top: 0;
       margin-bottom: -1.5rem !important;
-     }
+     } */
    
       .animation-bankcard-5{
         display:initial;
@@ -176,16 +180,28 @@
     }
     .card-cardform-5-erroMessage-div p{
     position: relative;
-   
+    margin-top: 0;
+    margin-bottom: -1.5rem !important;
 }
    
 }
-@media all and (min-width: 481px) { 
-    .card-5-cardicons {
-        position: relative;
-        top: 2.1rem;
-        right: 0.5rem;
-        font-size: 1.2rem; 
+@media all and (max-width: 440px) {
+    .card-5-image {
+        right: -7.2rem;
     }
-
+}
+@media all and (max-width: 400px) {
+    .card-5-image {
+        right: -6rem;
+    }
+}
+@media all and (max-width: 360px) {
+    .card-5-image {
+        right: -5.5rem;
+    }
+}
+@media all and (max-width: 330px) {
+    .card-5-image {
+        right: -4.5rem;
+    }
 }
