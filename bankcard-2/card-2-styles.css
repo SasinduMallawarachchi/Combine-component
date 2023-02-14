@@ -1,6 +1,6 @@
 @import url('https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy+SemiBold');
 
-* {
+.cardTwosection-componentBox * {
     box-sizing: border-box;
 }
 
@@ -280,4 +280,18 @@
        
     }
 
+}
+
+
+/* Change the white to any color */
+.card-2-input:-webkit-autofill,
+.card-2-input:-webkit-autofill:hover, 
+.card-2-input:-webkit-autofill:focus, 
+.card-2-input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 100px   #30313D inset !important;
+}
+
+/*Change text in autofill textbox*/
+.card-2-input:-webkit-autofill{
+    -webkit-text-fill-color: rgb(255, 255, 255) !important;
 }
