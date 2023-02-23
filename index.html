@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="./bankcard-2/card-2-styles.css"/>
     <link rel="stylesheet" href="./bankcard-4/card-4-styles/card-4-styles.css"/>
     <link rel="stylesheet" href="./bankcard-5/bankcard-5-styles.css"/>
-
+    <link rel="stylesheet" href="./bankcard-3/card-3-styles.css">
     <script src="https://kit.fontawesome.com/2476927edf.js" crossorigin="anonymous"></script>
   </head>
 
@@ -695,6 +695,215 @@
           </section>
     <!--Udeshi Card End-->
 
+    <!--Udeshi car-3 Start-->
+          <section class="container-sm container-bankcard-3 my-5 d-flex gradient-custom justify-content-center">
+            <div class="container d-flex justify-content-center main cardThreesection-componentBox" id="card-3">
+                <div class="row d-flex justify-content-center align-items-center h-80">
+                    <div class="col-12 col-lg-12 col-xl-12 col-sm-12 ">
+                        <div class="shadow-5-strong mx-sm-0 " id="card-3-form-main" style="border-radius: 15px;"> 
+                            <div class="card-3-body mx-sm-0 container pt-4 pb-4  d-flex justify-content-center main">
+                                <form method="" name="cardFormThree" id="cardFormThree" class="needs-validation need-validation-card-3" novalidate onsubmit="return cardThreeValidateForm()">
+                                    <div class="col-6 col-md-12 col-sm-12 mb-2 pb-2 w-100 " >
+                                        <div class="form-group">
+                                            <label class="d-flex justify-content-between card-3-form-label" for="cardname-card-3" id="cardname-lableId-card-3">
+                                               Name on card
+                                            </label>
+                                            <input  autocomplete="cc-name-card-3" class="card-3-input input-lg form-control cc-name-card-3 mb-1"  
+                                            data-payment='cc-name-card-3' dir="ltr" id="cc-name-card-3" class="cc-name-card-3"  
+                                              placeholder="Card Holder's Name" type="text"  required/>
+                                            <div class="card-cardform-3-erroMessage-div" contenteditable="false" id="card-cardform-3-erroMessage-div"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-md-12 col-sm-12 mb-2 pb-2 w-100  mt-1">
+                                        <div class="form-group">
+                                            <label class="d-flex justify-content-between card-3-form-label" for="cardNumber-card-3" id="cardNumber-lableId-card-3">
+                                                <span class="cardnumber-span-card-3">Card number</span>
+                                                <!--desktop-->
+                                               <div class="card-3-cardicons  f-flex flex-row" id="card-3-cardicons">
+                                               <img class="card-3-mobile-image" src="./bankcard-3/card-3-images/Visa.png" alt="visa">
+                                               <img class="card-3-mobile-image" src="./bankcard-3/card-3-images/marstercard.png" alt="marstercard">
+                                               <img class="card-3-mobile-image" src="./bankcard-3/card-3-images/americanexpress.png" alt="americanexpress">
+                                               </div>
+                                                    <!--mobile-->
+                                               <div class=" animation-card-3 f-flex flex-row "  >
+                                                <img class="card-3-mobile-image" src="./bankcard-3/card-3-images/Visa.png" alt="visa">
+                                                <img class="card-3-mobile-image" src="./bankcard-3/card-3-images/marstercard.png" alt="marstercard">
+                                                <img class="card-3-mobile-image" src="./bankcard-3/card-3-images/americanexpress.png" alt="americanexpress">
+                                                </div>
+                                            </label>
+                                            <input  autocomplete="cc-number-card-3" class="card-3-input input-lg form-control cc-number-card-3 mb-1"  
+                                            data-payment='cc-name-card-2' dir="ltr" id="cc-number-card-3" class="cc-number-card-3" inputmode="numeric"  maxlength="16" 
+                                              placeholder="1234 1234 1234 1234" type="text"  required/>
+                                            <div class="card-cardform-3-erroMessage-div" contenteditable="false" id="card-cardform-3-erroMessage-div"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-6 col-md-6  mb-2 mt-1 pb-2">
+                                        <div class="form-group">
+                                            <label class="card-3-form-label"
+                                            for="ExpirationDate-card-3">Expiration</label>
+                                            <input autocomplete="cc-exp-card-3" class="card-3-input input-lg form-control cc-exp-card-3 mb-1" data-payment='cc-exp-card-3' id="cc-exp-card-3" inputmode="numeric" class="cc-exp-card-3"  maxlength="5" min="2022-01" name="start" onkeyup="formatStringCardThree(event);" placeholder="MM / YY" type="text" required />
+                                            <div class="card-cardform-3-erroMessage-div" contenteditable="false" id="CardForm-3-error-messageExpirationDate"></div>
+                                        </div>
+                                        </div>
+                                        <div class="col-6 col-md-6 mt-1 mb-2 pb-2">
+                                            <div class="form-group">
+                                                <label class="d-flex justify-content-between card-3-form-label" for="cvcNumber-card-3">
+                                                    <span class="">CVC</span>
+                                                   
+                                                    <i class="bi bi-credit-card-2-back-fill card-3-cvcicon  fa-lg my-auto"></i>
+                                                    
+                                                </label>
+                                                <input autocomplete="off" class="card-3-input input-lg form-control cc-cvc-card-3 mb-1" data-payment='cc-cvc-card-3' inputmode="numeric" id="cc-cvc-card-3"  maxlength="4"  placeholder="123" type="text" required/> 
+                                                <div class="card-cardform-3-erroMessage-div" contenteditable="false" id="CardForm-3-error-messageCVC"></div>
+                                            </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-6 col-md-12 col-sm-12 mb-2 pb-2 w-100 ">
+                                        <label class="card-3-form-label " for="country-card-3" >Country</label>
+                                        <select class="select form-control-sm w-100 card-3-select-country input-card-3-details country-card-3" id="country-card-3" required >  
+                                            <option selected disabled value="">Select country</option>
+                                            <option value="SL">Sri Lanka</option>
+                                            <option value="AX">Aland Islands</option>
+                                            <option value="AL">Albania</option>
+                                            <option value="DZ">Algeria</option>
+                                            <option value="AS">American Samoa</option>
+                                            <option value="AD">Andorra</option>
+                                            <option value="AO">Angola</option>
+                                            <option value="AI">Anguilla</option>
+                                            <option value="AQ">Antarctica</option>
+                                            <option value="AG">Antigua and Barbuda</option>
+                                            <option value="AR">Argentina</option>
+                                            <option value="AM">Armenia</option>
+                                            <option value="AW">Aruba</option>
+                                            <option value="AU">Australia</option>
+                                            <option value="AT">Austria</option>
+                                            <option value="AZ">Azerbaijan</option>
+                                            <option value="BS">Bahamas</option>
+                                            <option value="BH">Bahrain</option>
+                                            <option value="BD">Bangladesh</option>
+                                            <option value="BB">Barbados</option>
+                                            <option value="BY">Belarus</option>
+                                            <option value="BE">Belgium</option>
+                                            <option value="BZ">Belize</option>
+                                            <option value="BJ">Benin</option>
+                                            <option value="BM">Bermuda</option>
+                                            <option value="BT">Bhutan</option>
+                                            <option value="BO">Bolivia</option>
+                                            <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                            <option value="BA">Bosnia and Herzegovina</option>
+                                            <option value="BW">Botswana</option>
+                                            <option value="BV">Bouvet Island</option>
+                                            <option value="BR">Brazil</option>
+                                            <option value="IO">British Indian Ocean Territory</option>
+                                            <option value="BN">Brunei Darussalam</option>
+                                            <option value="BG">Bulgaria</option>
+                                            <option value="BF">Burkina Faso</option>
+                                            <option value="BI">Burundi</option>
+                                            <option value="KH">Cambodia</option>
+                                            <option value="CM">Cameroon</option>
+                                            <option value="CA">Canada</option>
+                                            <option value="CV">Cape Verde</option>
+                                            <option value="KY">Cayman Islands</option>
+                                            <option value="CF">Central African Republic</option>
+                                            <option value="TD">Chad</option>
+                                            <option value="CL">Chile</option>
+                                            <option value="CN">China</option>
+                                            <option value="CX">Christmas Island</option>
+                                            <option value="CC">Cocos (Keeling) Islands</option>
+                                            <option value="CO">Colombia</option>
+                                            <option value="KM">Comoros</option>
+                                            <option value="CG">Congo</option>
+                                            <option value="CD">Congo, Democratic Republic of the Congo</option>
+                                            <option value="CK">Cook Islands</option>
+                                            <option value="CR">Costa Rica</option>
+                                            <option value="CI">Cote D'Ivoire</option>
+                                            <option value="HR">Croatia</option>
+                                            <option value="CU">Cuba</option>
+                                            <option value="CW">Curacao</option>
+                                            <option value="CY">Cyprus</option>
+                                            <option value="CZ">Czech Republic</option>
+                                            <option value="DK">Denmark</option>
+                                            <option value="DJ">Djibouti</option>
+                                            <option value="DM">Dominica</option>
+                                            <option value="DO">Dominican Republic</option>
+                                            <option value="EC">Ecuador</option>
+                                            <option value="EG">Egypt</option>
+                                            <option value="SV">El Salvador</option>
+                                            <option value="GQ">Equatorial Guinea</option>
+                                            <option value="ER">Eritrea</option>
+                                            <option value="EE">Estonia</option>
+                                            <option value="ET">Ethiopia</option>
+                                            <option value="FK">Falkland Islands (Malvinas)</option>
+                                            <option value="FO">Faroe Islands</option>
+                                            <option value="FJ">Fiji</option>
+                                            <option value="FI">Finland</option>
+                                            <option value="FR">France</option>
+                                            <option value="GF">French Guiana</option>
+                                            <option value="PF">French Polynesia</option>
+                                            <option value="TF">French Southern Territories</option>
+                                            <option value="GA">Gabon</option>
+                                            <option value="GM">Gambia</option>
+                                            <option value="GE">Georgia</option>
+                                            <option value="DE">Germany</option>
+                                            <option value="GH">Ghana</option>
+                                            <option value="GI">Gibraltar</option>
+                                            <option value="GR">Greece</option>
+                                            <option value="GL">Greenland</option>
+                                            <option value="GD">Grenada</option>
+                                            <option value="GP">Guadeloupe</option>
+                                            <option value="GU">Guam</option>
+                                            <option value="GT">Guatemala</option>
+                                            <option value="GG">Guernsey</option>
+                                            <option value="GN">Guinea</option>
+                                            <option value="GW">Guinea-Bissau</option>
+                                            <option value="GY">Guyana</option>
+                                            <option value="HT">Haiti</option>
+                                            <option value="HM">Heard Island and Mcdonald Islands</option>
+                                            <option value="VA">Holy See (Vatican City State)</option>
+                                            <option value="HN">Honduras</option>
+                                            <option value="HK">Hong Kong</option>
+                                            <option value="HU">Hungary</option>
+                                            <option value="IS">Iceland</option>
+                                            <option value="IN">India</option>
+                                            <option value="ID">Indonesia</option>
+                                            <option value="IR">Iran, Islamic Republic of</option>
+                                            <option value="IQ">Iraq</option>
+                                            <option value="IE">Ireland</option>
+                                            <option value="IM">Isle of Man</option>
+                                            <option value="IL">Israel</option>
+                                            <option value="IT">Italy</option>
+                                            <option value="JM">Jamaica</option>
+                                            <option value="JP">Japan</option>
+                                            <option value="JE">Jersey</option>
+                                            <option value="JO">Jordan</option>
+                                            <option value="KZ">Kazakhstan</option>
+                                            <option value="KE">Kenya</option>
+                                            <option value="KI">Kiribati</option>
+                                            <option value="KP">Korea, Democratic People's Republic of</option>
+                                            <option value="KR">Korea, Republic of</option>
+                                            <option value="XK">Kosovo</option>
+                                            <option value="KW">Kuwait</option>
+                                            <option>...</option>
+                                        </select>
+                                         <div class="card-cardform-3-erroMessage-div" id="CardForm-3-error-messageCountry"></div>
+                                    </div>
+                                    <div class="mx-auto">
+                                        <button class="btn btn-info " id="card-3-validate" value="submit-card-3" type="submit" >Confirm Payment</button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          
+          </section>
+    <!-- Udeshi card 3 End -->
+
     <!--Sasindu Start-->
           <section class="container-sm container-bankcard-4 my-5 d-flex gradient-custom justify-content-center">
             <div class="container d-flex justify-content-center main card-one section-componentBox" id="card-2">
@@ -1132,6 +1341,7 @@
 <!--card js-->
 <script type="text/javascript" src="./bankcard-1/bankcard-1-js/bankcard-1-main.js"></script> <!-- Hiruni -->
 <script type="text/javascript" src="./bankcard-2/bankard-2-js/card-2.js"></script> <!-- Udeshi -->
+<script type="text/javascript" src="./bankcard-3/card-3.js"></script> <!-- Udeshi -->
 <script type="text/javascript" src="./bankcard-4/card-4-js/card-4.js"></script> <!-- Sasindu -->
 <script type="text/javascript" src="./bankcard-5/bankcard-5-js/bankcard-5.js"></script> <!-- Rashmi -->
 
