@@ -1,3 +1,4 @@
+@import url('https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy+SemiBold');
 
 .cardTwosection-componentBox * {
     box-sizing: border-box;
@@ -65,6 +66,10 @@
     font-weight: 300;
 }
 
+#card-2-validate:hover {
+    background:  #1c4861 !important;
+    
+}
 
 .card-2-input {
     border: 0.4px solid #E6E6E6;

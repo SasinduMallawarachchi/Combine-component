@@ -66,6 +66,10 @@
     font-weight: 300;
 }
 
+#card-3-validate:hover {
+    background:  #454570 !important;
+    
+}
 
 .card-3-input {
     border: 0.4px solid #a8a4a4;/*#E6E6E6*/
